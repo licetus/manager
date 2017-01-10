@@ -1,6 +1,7 @@
 <template>
 	<div id="app">
-		<NavMenu></NavMenu>
+		<NavMenuHorizontal></NavMenuHorizontal>
+		<NavMenuVertical></NavMenuVertical>
 		<!-- <img src="./assets/logo.png">
 		<h1>{{ msg }}</h1>
 		<h2>Essential Links</h2>
@@ -21,7 +22,8 @@
 </template>
 
 <script>
-import NavMenu from './components/NavMenu.vue'
+import NavMenuHorizontal from './components/NavMenuHorizontal.vue'
+import NavMenuVertical from './components/NavMenuVertical.vue'
 export default {
 	name: 'app',
 	data () {
@@ -29,7 +31,8 @@ export default {
 		}
 	},
 	components: {
-		NavMenu
+		NavMenuHorizontal,
+		NavMenuVertical
 	}
 }
 </script>
