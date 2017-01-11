@@ -20,13 +20,13 @@
 </template>
 
 <script>
-  export default {
-    methods: {
-      handleSelect(key, keyPath) {
-        console.log(key, keyPath);
-      }
-    }
-  }
+	export default {
+		methods: {
+			handleSelect(key, keyPath) {
+				console.log(key, keyPath);
+			}
+		}
+	}
 </script>
 
 <style lang="css">
