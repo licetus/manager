@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": "vue",
+  "extends": "airbnb",
   "globals": {
     "__DEV__": true,
     "db": true
@@ -16,6 +16,7 @@
   "no-confusing-arrow": 0,
     "semi": [2, "never"],
     "global-require": 0,
-    "indent": ["error", "tab"]
+    "indent": ["error", "tab"],
+    "no-tabs": "off"
   }
 }
