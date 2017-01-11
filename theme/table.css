@@ -332,14 +332,14 @@
 .el-tag--gray{
     background-color: #e5e9f2;
     border-color: #e5e9f2;
-    color: #475669;
+    color: #495066;
 }
 .el-tag--gray .el-tag__close:hover{
-    background-color: #475669;
+    background-color: #495066;
     color: #fff;
 }
 .el-tag--gray.is-hit{
-    border-color: #475669;
+    border-color: #495066;
 }
 .el-tag--primary{
     background-color: rgba(32,159,255,0.10);

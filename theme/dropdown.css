@@ -617,7 +617,7 @@
 
 .el-dropdown-menu__item:not(.is-disabled):hover{
     background-color: #e5e9f2;
-    color: #475669;
+    color: #495066;
 }
 
 .el-dropdown-menu__item.is-disabled{
