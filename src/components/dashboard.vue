@@ -1,7 +1,7 @@
 <template lang="html">
 	<el-row>
 		<el-card>
-			<p>dashboard</p>
+			<p><span class='m-icon-alarm'>dashboard</p>
 			<p>dashboard</p>
 			<p>dashboard</p>
 			<p>dashboard</p>

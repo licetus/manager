@@ -185,6 +185,7 @@
 		font-weight: 400;
 		font-style: normal;
 }
+
 [class^="el-icon-"], [class*=" el-icon-"] {
 		/* use !important to prevent issues with browser extensions that change fonts */
 		font-family: 'element-icons' !important;
@@ -200,6 +201,7 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 }
+
 .el-icon-arrow-down:before {
 		content: "\e600";
 }
@@ -14052,8 +14054,10 @@
 		background-color: #475669;
 }
 .el-menu--dark .el-menu-item.is-active, .el-menu--dark .el-submenu .el-menu .el-menu-item.is-active:hover {
-		background-color: #e9edf1;
-		color: #292f32;
+		/*background-color: #e9edf1;
+		color: #292f32;*/
+		background-color: #00c4e2;
+		color: #fff;
 }
 .el-menu--horizontal {
 	background-color: #363d42;
@@ -14154,6 +14158,13 @@
 		background-color: #e5e9f2;
 }
 .el-submenu .el-menu-item {
+		padding-left: 30px;
+		height: 50px;
+		line-height: 50px;
+		padding: 0 30px;
+}
+.el-menu--dark .el-submenu .el-menu-item {
+		padding-left: 30px !important;
 		height: 50px;
 		line-height: 50px;
 		padding: 0 30px;

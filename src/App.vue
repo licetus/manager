@@ -25,15 +25,15 @@
 	body {
 		font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 	}
-	.el-submenu [class^=fa] {
-		vertical-align: middle;
-		margin-right: 20px;
+	.el-submenu [class^=m-icon] {
+		vertical-align: baseline;
+		margin-right: 10px;
 		width: 20px;
 	}
 
-	.el-menu-item [class^=fa] {
-		vertical-align: middle;
-		margin-right: 20px;
+	.el-menu-item [class^=m-icon] {
+		vertical-align: baseline;
+		margin-right: 10px;
 		width: 20px;
 	}
 </style>

@@ -5,6 +5,7 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import ElementUI from 'element-ui'
 import '../theme/index.css'
+import '../theme/icomoon-font.css'
 // import store from './vuex/store'
 import App from './App.vue'
 
@@ -37,7 +38,7 @@ const routes = [
 		component: NavMenu,
 		name: '',
 		leaf: true,
-		iconCls: 'fa fa-bar-chart fa-lg',
+		iconCls: 'm-icon-dashboard',
 		children: [
 			{ path: '/dashboard', component: Dashboard, name: 'Dashboard' },
 		],
@@ -46,33 +47,33 @@ const routes = [
 		path: '/',
 		component: NavMenu,
 		name: '导航一',
-		iconCls: 'fa fa-bars fa-lg',
+		iconCls: 'm-icon-assistant',
 		children: [
-			{ path: '/page1', component: Page1, name: 'component-1-1' },
-			{ path: '/page2', component: Page2, name: 'component-1-2' },
-			{ path: '/page3', component: Page3, name: 'component-1-3' },
+			{ path: '/page1', component: Page1, name: 'component-1-1', iconCls: 'm-icon-redeem' },
+			{ path: '/page2', component: Page2, name: 'component-1-2', iconCls: 'm-icon-camera' },
+			{ path: '/page3', component: Page3, name: 'component-1-3', iconCls: 'm-icon-schedule' },
 		],
 	},
 	{
 		path: '/',
 		component: NavMenu,
 		name: '导航二',
-		iconCls: 'fa fa-codepen fa-lg',
+		iconCls: 'm-icon-blur_on',
 		children: [
-			{ path: '/page4', component: Page4, name: 'component-2-1' },
-			{ path: '/page5', component: Page5, name: 'component-2-2' },
-			{ path: '/page6', component: Page6, name: 'component-2-3' },
+			{ path: '/page4', component: Page4, name: 'component-2-1', iconCls: 'm-icon-graphic_eq' },
+			{ path: '/page5', component: Page5, name: 'component-2-2', iconCls: 'm-icon-bubble_chart' },
+			{ path: '/page6', component: Page6, name: 'component-2-3', iconCls: 'm-icon-pie_chart' },
 		],
 	},
 	{
 		path: '/',
 		component: NavMenu,
 		name: '导航三',
-		iconCls: 'fa fa-database fa-lg',
+		iconCls: 'm-icon-chat_bubble',
 		children: [
-			{ path: '/page7', component: Page7, name: 'component-3-1' },
-			{ path: '/page8', component: Page8, name: 'component-3-2' },
-			{ path: '/page9', component: Page9, name: 'component-3-3' },
+			{ path: '/page7', component: Page7, name: 'component-3-1', iconCls: 'm-icon-assignment_ind' },
+			{ path: '/page8', component: Page8, name: 'component-3-2', iconCls: 'm-icon-assignment_turned_in' },
+			{ path: '/page9', component: Page9, name: 'component-3-3', iconCls: 'm-icon-fingerprint' },
 		],
 	},
 	{
@@ -80,7 +81,7 @@ const routes = [
 		component: NavMenu,
 		name: '',
 		leaf: true,
-		iconCls: 'fa fa-cog fa-lg',
+		iconCls: 'm-icon-settings',
 		children: [
 			{ path: '/setting', component: Setting, name: 'Setting' },
 		],
