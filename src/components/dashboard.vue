@@ -1,5 +1,25 @@
 <template lang="html">
-	<h1>dashboard</h1>
+	<el-row>
+		<el-card>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+			<p>dashboard</p>
+		</el-card>
+	</el-row>
+
+
 </template>
 
 <script>

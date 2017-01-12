@@ -22,14 +22,17 @@
 <style>
 	@import "../node_modules/font-awesome/css/font-awesome.min.css";
 
+	body {
+		font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+	}
 	.el-submenu [class^=fa] {
-		vertical-align: baseline;
+		vertical-align: middle;
 		margin-right: 20px;
 		width: 20px;
 	}
 
 	.el-menu-item [class^=fa] {
-		vertical-align: baseline;
+		vertical-align: middle;
 		margin-right: 20px;
 		width: 20px;
 	}
