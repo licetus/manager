@@ -15,13 +15,13 @@
 				</el-row>
 			</el-menu>
 		</el-col>
+		<el-row class="title">
+			<p class="text">后台管理系统</p>
+		</el-row>
 		<el-col class="panel-body">
 			<el-col class="panel-side">
 				<el-menu mode="vertical" theme="dark" class="nav-menu-side" default-active="/dashboard"
 				@open="handleOpen" @close="handleClose" @select="handleSelect" router>
-					<el-row class="title">
-						<p class="text">后台管理系统</p>
-					</el-row>
 					<template v-for="(item,index) in $router.options.routes" v-if="!item.hidden">
 						<el-submenu :index="index+''" v-if="!item.leaf">
 							<template slot="title"><i :class="item.iconCls"></i>{{item.name}}</template>
@@ -34,6 +34,16 @@
 				</el-menu>
 			</el-col>
 			<el-col class="panel-center">
+				<el-col class="breadcrumb">
+					<el-breadcrumb>
+						<el-breadcrumb-item :to="{ path: '/dashboard' }">首页</el-breadcrumb-item>
+						<el-breadcrumb-item v-if="currentPathNameParent!=''">{{currentPathNameParent}}</el-breadcrumb-item>
+						<el-breadcrumb-item v-if="currentPathName!=''">{{currentPathName}}</el-breadcrumb-item>
+					</el-breadcrumb>
+				</el-col>
+				<el-card class="page">
+					<router-view></router-view>
+				</el-card>
 			</el-col>
 		</el-col>
 	</el-row>
@@ -41,6 +51,18 @@
 
 <script>
 export default {
+	data () {
+		return {
+			currentPathName: 'Dashboard',
+			currentPathNameParent: '',
+		}
+	},
+	watch: {
+		'$route' (to, from) {
+			this.currentPathName = to.name
+			this.currentPathNameParent = to.matched[0].name
+		}
+	},
 	methods: {
 		handleOpen(key, keyPath) {
 			console.log(key, keyPath);
@@ -72,25 +94,46 @@ export default {
 		height: 60px;
 		background-color: #363d42;
 	}
+	.title {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 60px;
+		width: 200px;
+		font-size: 18px;
+		color: #c0ccda;
+		background-color: #292f32;
+	}
+	.text {
+		margin-left: 37px;
+		vertical-align: middle;
+	}
+	.panel-body {
+	background-color: #e9edf1;
+	position:absolute;
+	top: 60px;
+	bottom: 0px;
+	overflow-y: scroll;
+	}
 	.panel-side {
 		position: absolute;
 		top: 0px;
 		bottom: 0px;
 		left: 0px;
 		width: 200px;
-		background-color: #363d42;
+		background-color: #41485d;
+	}
+	.panel-center {
+		padding: 21px 20px 20px 230px;
+	}
+	.breadcrumb {
+		margin-bottom: 22px;
+	}
+	.page {
+		background-color: #fff;
+		box-sizing: border-box;
 	}
 
-	.title {
-		top: 0px;
-		height: 60px;
-		font-size: 18px;
-		color: #c0ccda;
-		margin: 0 0 0 35px;
-	}
-	.text {
-		vertical-align: middle;
-	}
 
 
 </style>

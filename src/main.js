@@ -35,15 +35,18 @@ const routes = [
 	{
 		path: '/',
 		component: NavMenu,
-		name: 'Dashboard',
+		name: '',
+		leaf: true,
+		iconCls: 'fa fa-bar-chart fa-lg',
 		children: [
-			{ path: '/dashboard', component: Dashboard, name: 'dashboard' },
+			{ path: '/dashboard', component: Dashboard, name: 'Dashboard' },
 		],
 	},
 	{
 		path: '/',
 		component: NavMenu,
 		name: '导航一',
+		iconCls: 'fa fa-bars fa-lg',
 		children: [
 			{ path: '/page1', component: Page1, name: 'component-1-1' },
 			{ path: '/page2', component: Page2, name: 'component-1-2' },
@@ -54,6 +57,7 @@ const routes = [
 		path: '/',
 		component: NavMenu,
 		name: '导航二',
+		iconCls: 'fa fa-codepen fa-lg',
 		children: [
 			{ path: '/page4', component: Page4, name: 'component-2-1' },
 			{ path: '/page5', component: Page5, name: 'component-2-2' },
@@ -64,6 +68,7 @@ const routes = [
 		path: '/',
 		component: NavMenu,
 		name: '导航三',
+		iconCls: 'fa fa-database fa-lg',
 		children: [
 			{ path: '/page7', component: Page7, name: 'component-3-1' },
 			{ path: '/page8', component: Page8, name: 'component-3-2' },
@@ -73,9 +78,11 @@ const routes = [
 	{
 		path: '/',
 		component: NavMenu,
-		name: 'Setting',
+		name: '',
+		leaf: true,
+		iconCls: 'fa fa-cog fa-lg',
 		children: [
-			{ path: '/setting', component: Setting, name: 'setting' },
+			{ path: '/setting', component: Setting, name: 'Setting' },
 		],
 	},
 ]
