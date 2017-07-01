@@ -13,15 +13,19 @@ import Login from './components/login.vue'
 import NavMenu from './components/nav-menu.vue'
 import Dashboard from './components/dashboard.vue'
 import Setting from './components/setting.vue'
-import Page1 from './components/nav-menu-1/component-1-1.vue'
-import Page2 from './components/nav-menu-1/component-1-2.vue'
-import Page3 from './components/nav-menu-1/component-1-3.vue'
-import Page4 from './components/nav-menu-2/component-2-1.vue'
-import Page5 from './components/nav-menu-2/component-2-2.vue'
-import Page6 from './components/nav-menu-2/component-2-3.vue'
-import Page7 from './components/nav-menu-3/component-3-1.vue'
-import Page8 from './components/nav-menu-3/component-3-2.vue'
-import Page9 from './components/nav-menu-3/component-3-3.vue'
+import CustomerInfo from './components/customer/customer-info.vue'
+import ProductInfo from './components/product/product-info.vue'
+import Notification from './components/notification/notification.vue'
+import Bonus from './components/notification/bonus.vue'
+import Carousel from './components/notification/carousel.vue'
+import Comment from './components/notification/comment.vue'
+import Approval from './components/loan/approval.vue'
+import Pay from './components/loan/pay.vue'
+import Repay from './components/loan/repay.vue'
+import Overview from './components/data/overview.vue'
+import Transaction from './components/data/transaction.vue'
+import CustomerData from './components/data/customer_data.vue'
+import ProductData from './components/data/product.vue'
 
 Vue.use(ElementUI)
 Vue.use(Vuex)
@@ -46,34 +50,43 @@ const routes = [
 	{
 		path: '/',
 		component: NavMenu,
-		name: '导航一',
+		name: '客户管理',
 		iconCls: 'm-icon-assistant',
 		children: [
-			{ path: '/page1', component: Page1, name: 'component-1-1', iconCls: 'm-icon-redeem' },
-			{ path: '/page2', component: Page2, name: 'component-1-2', iconCls: 'm-icon-camera' },
-			{ path: '/page3', component: Page3, name: 'component-1-3', iconCls: 'm-icon-schedule' },
+			{ path: '/customer-info', component: CustomerInfo, name: '客户信息', iconCls: 'm-icon-redeem' },
 		],
 	},
 	{
 		path: '/',
 		component: NavMenu,
-		name: '导航二',
+		name: '产品管理',
 		iconCls: 'm-icon-blur_on',
 		children: [
-			{ path: '/page4', component: Page4, name: 'component-2-1', iconCls: 'm-icon-graphic_eq' },
-			{ path: '/page5', component: Page5, name: 'component-2-2', iconCls: 'm-icon-bubble_chart' },
-			{ path: '/page6', component: Page6, name: 'component-2-3', iconCls: 'm-icon-pie_chart' },
+			{ path: '/product-info', component: ProductInfo, name: '产品信息', iconCls: 'm-icon-graphic_eq' },
 		],
 	},
 	{
 		path: '/',
 		component: NavMenu,
-		name: '导航三',
+		name: '信息管理',
 		iconCls: 'm-icon-chat_bubble',
 		children: [
-			{ path: '/page7', component: Page7, name: 'component-3-1', iconCls: 'm-icon-assignment_ind' },
-			{ path: '/page8', component: Page8, name: 'component-3-2', iconCls: 'm-icon-assignment_turned_in' },
-			{ path: '/page9', component: Page9, name: 'component-3-3', iconCls: 'm-icon-fingerprint' },
+			{ path: '/notification', component: Notification, name: '公告信息', iconCls: 'm-icon-assignment_ind' },
+			{ path: '/bonus', component: Bonus, name: '活动信息', iconCls: 'm-icon-assignment_turned_in' },
+			{ path: '/carousel', component: Carousel, name: '轮播图', iconCls: 'm-icon-fingerprint' },
+			{ path: '/comment', component: Comment, name: '用户评论', iconCls: 'm-icon-fingerprint' },
+		],
+	},
+	{
+		path: '/',
+		component: NavMenu,
+		name: '数据统计',
+		iconCls: 'm-icon-chat_bubble',
+		children: [
+			{ path: '/overview', component: Overview, name: '总览', iconCls: 'm-icon-assignment_ind' },
+			{ path: '/transaction', component: Transaction, name: '流水', iconCls: 'm-icon-assignment_turned_in' },
+			{ path: '/customer-data', component: CustomerData, name: '客户', iconCls: 'm-icon-fingerprint' },
+			{ path: '/product-data', component: ProductData, name: '产品', iconCls: 'm-icon-fingerprint' },
 		],
 	},
 	{
