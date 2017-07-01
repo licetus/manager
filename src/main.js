@@ -24,8 +24,8 @@ import Pay from './components/loan/pay.vue'
 import Repay from './components/loan/repay.vue'
 import Overview from './components/data/overview.vue'
 import Transaction from './components/data/transaction.vue'
-import CustomerData from './components/data/customer_data.vue'
-import ProductData from './components/data/product.vue'
+import CustomerData from './components/data/customer-data.vue'
+import ProductData from './components/data/product-data.vue'
 
 Vue.use(ElementUI)
 Vue.use(Vuex)
