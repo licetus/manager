@@ -1,5 +1,5 @@
 <template lang="html">
-	<h1>components-1-3</h1>
+	<h1>components-3-1</h1>
 </template>
 
 <script>
